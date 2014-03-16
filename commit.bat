@@ -9,4 +9,6 @@ set git=D:\Dev\PortableGit\bin\git.exe
 %git% commit * -m "."
 %git% push origin master
 
+%git% gc
+
 if not [%ERRORLEVEL%]==[0] pause
