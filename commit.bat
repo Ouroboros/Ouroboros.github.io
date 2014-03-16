@@ -9,5 +9,4 @@ set git=D:\Dev\PortableGit\bin\git.exe
 %git% commit * -m "."
 %git% push origin master
 
-echo %ERRORLEVEL%
-pause
+if not [%ERRORLEVEL%]==[0] pause

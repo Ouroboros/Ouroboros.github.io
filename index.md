@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Fuck World!
-tagline: Supporting tagline
+title: 「十三工房」
+tagline:
 ---
 {% include JB/setup %}
 
@@ -9,9 +9,7 @@ test
 
 测试
 
-中文
-
-fuck [link](http://www.baidu.com/)
+[link](http://www.baidu.com/)
 
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
