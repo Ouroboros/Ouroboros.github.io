@@ -9,6 +9,16 @@ comments: true
 share: true
 ---
 
+{% highlight c %}
+/* hello world demo */
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+{% endhighlight %}
+
 Here be a sample post with a custom background image. To utilize this "feature" just add the following YAML to a post's front matter.
 
 {% highlight yaml %}
