@@ -19,6 +19,11 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}
 
+{% highlight python %}
+def fuck():
+    pass
+{% endhighlight %}
+
 Here be a sample post with a custom background image. To utilize this "feature" just add the following YAML to a post's front matter.
 
 {% highlight yaml %}
