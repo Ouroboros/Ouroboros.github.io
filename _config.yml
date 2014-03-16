@@ -14,10 +14,6 @@ title : 星辰の間
 tagline: Site Tagline
 author :
   name : アリアンロード
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
