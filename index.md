@@ -22,22 +22,31 @@ In `_config.yml` remember to specify your own data:
 
 The theme should reference these variables whenever needed.
 
-{% highlight c %}
-/* hello world demo */
-#include <stdio.h>
-int main(int argc, char **argv)
-{
-    printf("Hello, World!\n");
-    return 0;
-}
+{% highlight python %}
+
+def fuck():
+    print('fuck')
+
 {% endhighlight %}
 
-```c
-/* hello world demo */
-#include <stdio.h>
-int main(int argc, char **argv)
+{% highlight c %}
+
+void fuck()
 {
-    printf("Hello, World!\n");
-    return 0;
+    printf("fuck\n");
 }
-```
+
+{% endhighlight %}
+
+
+{% highlight c# %}
+
+namespce fuck
+{
+    public void fuck()
+    {
+        Console.WriteLine("fuck");
+    }
+}
+
+{% endhighlight %}
