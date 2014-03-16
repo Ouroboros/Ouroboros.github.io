@@ -8,6 +8,7 @@ tagline: Supporting tagline
 test
 
 测试
+
 中文
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
