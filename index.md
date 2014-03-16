@@ -13,14 +13,7 @@ test
 
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
-
-    code :
-      block : fuck
-
-The theme should reference these variables whenever needed.
+## fuck your mother
 
 {% highlight python %}
 
