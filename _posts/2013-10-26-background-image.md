@@ -14,7 +14,7 @@ share: true
 #include <stdio.h>
 int main(int argc, char **argv)
 {
-    printf("Hello, World!\n");
+    printf("Fuck, Your mother!\n");
     return 0;
 }
 {% endhighlight %}
