@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'assets/css/main.min.css': [
+          'assets/css/main.css': [
             'assets/less/main.less'
           ]
         }
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
     },
     clean: {
       dist: [
-        'assets/css/main.min.css',
+        'assets/css/main.css',
         'assets/js/scripts.min.js'
       ]
     }

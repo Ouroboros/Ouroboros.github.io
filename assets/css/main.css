@@ -204,16 +204,11 @@ body {
   font-size: 16px;
 }
 
-::-moz-selection {
-  color: #222222;
-  text-shadow: none;
-  background-color: #c8c8c8;
-}
-
 ::selection {
-  color: #222222;
-  text-shadow: none;
-  background-color: #c8c8c8;
+    background:#C9E1FF;
+}
+::-moz-selection{
+    background:#C9E1FF;
 }
 
 .wrap {
