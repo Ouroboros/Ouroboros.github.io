@@ -14,5 +14,5 @@ set git=D:\Dev\PortableGit\bin\git.exe
 if not [%ERRORLEVEL%]==[0] (
     pause
 ) else (
-    timeout /t 3
+    timeout /t 5
 )

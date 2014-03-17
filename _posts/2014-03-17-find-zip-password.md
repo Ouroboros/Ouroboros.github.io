@@ -43,3 +43,7 @@ static void init_keys(const char* passwd,unsigned long* pkeys,const unsigned lon
 * 查找这三个 key 定位 init_keys
 * 下条件断点输出 passwd
 * 收工
+
+<figure>
+    <img src="/images/posts/find-zip-password-example-rar-zip-sfx-32.jpg" alt="">
+</figure>
