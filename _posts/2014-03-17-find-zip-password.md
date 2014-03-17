@@ -17,7 +17,7 @@ share: true
 
 [zlib\contrib\minizip\crypt.h](https://github.com/madler/zlib/blob/master/contrib/minizip/crypt.h#L66){:target="_blank"}
 
-{% highlight c %}
+{% highlight c linenos %}
 /***********************************************************************
  * Initialize the encryption keys and the random header according to
  * the given password.
