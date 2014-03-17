@@ -1,7 +1,7 @@
 @echo off
 cd/d "%~dp0"
-set PATH=D:\Dev\ruby\bin\;%PATH%
-set jekyll=D:\Dev\ruby\bin\jekyll.bat
+set rubypath=D:\Dev\ruby\bin
+set PATH=%rubypath%\;%PATH%
+set jekyll=ruby.exe "%rubypath%\jekyll"
 
-call %jekyll% serve --port 80 --watch --trace --config _config.yml,_config.local.yml
-exit
+start "" %jekyll% serve --port 80 --watch --trace --config _config.yml,_config.local.yml
