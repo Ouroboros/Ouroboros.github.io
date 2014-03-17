@@ -11,4 +11,8 @@ set git=D:\Dev\PortableGit\bin\git.exe
 
 %git% gc
 
-if not [%ERRORLEVEL%]==[0] pause
+if not [%ERRORLEVEL%]==[0] (
+    pause
+) else (
+    timeout /t 3
+)
