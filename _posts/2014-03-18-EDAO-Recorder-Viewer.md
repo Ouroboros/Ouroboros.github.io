@@ -14,6 +14,6 @@ date: 2014-03-18 01:40
 
 
 <figure>
-    <a href="/images/posts/EDAO-BonusBox-Recorder-Viewer-Save-List.jpg" target="_blank"><img src="/images/posts/EDAO-BonusBox-Recorder-Viewer-Save-List.jpg" alt=""></a>
-    <a href="/images/posts/EDAO-BonusBox-Recorder-Viewer-Box-List.jpg" target="_blank"><img src="/images/posts/EDAO-BonusBox-Recorder-Viewer-Box-List.jpg" alt=""></a>
+    <a href="/images/posts/EDAO-Recorder-Viewer-Save-List.jpg" target="_blank"><img src="/images/posts/EDAO-Recorder-Viewer-Save-List.jpg" alt=""></a>
+    <a href="/images/posts/EDAO-Recorder-Viewer-Box-List.jpg" target="_blank"><img src="/images/posts/EDAO-Recorder-Viewer-Box-List.jpg" alt=""></a>
 </figure>
