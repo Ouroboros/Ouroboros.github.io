@@ -2,9 +2,8 @@
 layout: post
 title: "Sample Link Post"
 description: "Example and code for using link posts."
-tags: [sample post, link post]
 comments: true
-link: http://mademistakes.com  
+link: http://mademistakes.com
 share: true
 ---
 
