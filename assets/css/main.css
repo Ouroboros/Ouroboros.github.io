@@ -375,12 +375,13 @@ pre {
 
 p code,
 li code {
+  max-width: 100%;
   padding: 0 5px;
   margin: 0 2px;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1.5;
-  white-space: pre;
+  white-space: nowrap;
   background-color: #f2f2f2;
   border: 1px solid #e6e6e6;
   -webkit-border-radius: 3px;
@@ -4029,7 +4030,7 @@ body {
 @media only screen and (min-width: 62.5em) {
   #post .entry-content,
   #page .entry-content {
-    max-width: 800px;
+    max-width: 1024px;
     padding: 50px 80px;
     margin: 50px auto 30px auto;
   }
@@ -4127,7 +4128,7 @@ body {
 
 @media only screen and (min-width: 62.5em) {
   .read-more {
-    max-width: 800px;
+    max-width: 1024px;
     padding: 50px 80px;
     margin: 60px auto;
   }
@@ -4257,7 +4258,7 @@ body {
 
 @media only screen and (min-width: 62.5em) {
   #post-index #main {
-    max-width: 800px;
+    max-width: 1024px;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
