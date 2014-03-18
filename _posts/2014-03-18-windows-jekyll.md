@@ -58,7 +58,7 @@ date: 2014-03-18 17:50
 
 6. 安装 jekyll、wdm、kramdown
 
-    1. `gem install jekyll --version=1.4.2 --platform=ruby`
+    1. `gem install jekyll --version=1.4.2`
 
         当前最新版本是`1.4.3`，[据说跟 Windows 相性不好](http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve){:target="_blank"}
 
