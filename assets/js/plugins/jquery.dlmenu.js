@@ -76,19 +76,19 @@
 
 			var self = this;
 
-			this._openMenu();
+			// this._openMenu();
 
-			// this.$trigger.on( 'click.dlmenu', function() {
+			this.$trigger.on( 'mouseover.dlmenu', function() {
 
-			// 	if( self.open ) {
-			// 		self._closeMenu();
-			// 	}
-			// 	else {
-			// 		self._openMenu();
-			// 	}
-			// 	return false;
+				if( self.open ) {
+					self._closeMenu();
+				}
+				else {
+					self._openMenu();
+				}
+				return false;
 
-			// } );
+			} );
 
 			this.$menuitems.on( 'click.dlmenu', function( event ) {
 
@@ -198,9 +198,9 @@
 		_openMenu : function() {
 			var self = this;
 			// clicking somewhere else makes the menu close
-			// $body.off( 'click' ).on( 'click.dlmenu', function() {
-				// self._closeMenu() ;
-			// } );
+			$body.off( 'click' ).on( 'click.dlmenu', function() {
+				self._closeMenu() ;
+			} );
 			this.$menu.addClass( 'dl-menuopen dl-menu-toggle' ).on( this.transEndEventName, function() {
 				$( this ).removeClass( 'dl-menu-toggle' );
 			} );

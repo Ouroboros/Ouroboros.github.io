@@ -368,7 +368,9 @@ code,
 kbd,
 samp,
 pre {
-  font-family: monospace;
+  font-family: "DejaVu Sans Mono","Consolas","Lucida Console","Courier New","Microsoft Yahei UI","Microsoft Yahei",monospace;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 p code,
@@ -387,10 +389,18 @@ li code {
 }
 
 pre {
-  overflow-x: auto;
+  overflow: auto;
+  padding:10px 15px 10px 15px;
+  margin: 0 0px;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1.5;
+  white-space: pre;
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
 }
 
 pre::-webkit-scrollbar {

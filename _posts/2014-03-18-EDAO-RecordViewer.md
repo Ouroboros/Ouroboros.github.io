@@ -10,7 +10,8 @@ date: 2014-03-18 01:40
 
 一个用 WPF 写的查看所有宝箱位置和状态的小程序，写得很粗糙，高 DPI 下有 BUG。
 
-[下载]({{ site.url }}/bin/軌跡/碧の軌跡/RecordViewer.rar)
+
+<div markdown="0"><a href="{{ site.url }}/bin/軌跡/碧の軌跡/RecordViewer.rar" class="btn btn-success">点此下载</a></div>
 
 
 <figure>
