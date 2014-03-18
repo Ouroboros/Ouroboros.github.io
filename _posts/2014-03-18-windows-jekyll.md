@@ -32,7 +32,7 @@ date: 2014-03-18 17:50
 
     [DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe](http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe)
 
-    解压到 C:\ruby\devkit
+    解压到`C:\ruby\devkit`
 
 4. 安装 DevKit
 
