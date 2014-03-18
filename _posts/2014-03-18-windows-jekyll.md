@@ -12,9 +12,7 @@ date: 2014-03-18 17:50
 
 现在以 Windows 8.1 x64 为例，把流程记录一下：
 
-1. 安装 ruby
-
-    假设安装目录是 C:\ruby
+1. 安装 ruby，假设安装目录是 C:\ruby
 
     [google 搜索 rubyinstaller](https://www.google.com/search?ie=UTF-8&q=rubyinstaller){:target="_blank"}
 
