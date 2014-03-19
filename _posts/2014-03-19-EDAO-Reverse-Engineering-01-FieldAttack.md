@@ -115,7 +115,6 @@ date: 2014-03-19 12:10
 
 <span style="background-color: rgb(191,175,241)">四字节，itc 索引，也就是人物的贴图，索引格式看</span>
 [这里](https://github.com/Arianrhod/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/Base/EDAOBase.py#L177){:target="_blank"}
-</span>
 
 <span style="background-color: rgb(237,160,191)">
 以单字节 0 结尾的字符串，不包含后缀的 eff 文件名。\\
