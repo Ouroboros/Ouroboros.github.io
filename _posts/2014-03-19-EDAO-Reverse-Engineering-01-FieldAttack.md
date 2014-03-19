@@ -2,7 +2,7 @@
 layout: post
 title: 碧之轨迹逆向系列（1）——场景攻击
 description: ""
-tags: [轨迹系列 碧之轨迹]
+tags: [轨迹系列, 碧之轨迹, 逆向]
 comments: true
 share: true
 date: 2014-03-19 12:10
