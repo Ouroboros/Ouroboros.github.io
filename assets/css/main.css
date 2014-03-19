@@ -23,6 +23,7 @@ header,
 hgroup,
 nav,
 section {
+  font-family: "WenQuanYi Micro Hei Mono", "WenQuanYi Micro Hei", "Microsoft Yahei Mono", "Microsoft Yahei", sans-serif !important;
   display: block;
 }
 
@@ -3816,6 +3817,7 @@ body {
 
 @media only screen and (min-width: 62.5em) {
   .header-title h1 {
+    font-family: "WenQuanYi Micro Hei Mono", "WenQuanYi Micro Hei", "Microsoft Yahei Mono", "Microsoft Yahei", sans-serif !important;
     font-size: 60px;
     font-size: 3.75rem;
   }
@@ -3847,6 +3849,7 @@ body {
 }
 
 .feature .header-title .header-title-wrap {
+  font-family: "WenQuanYi Micro Hei Mono", "WenQuanYi Micro Hei", "Microsoft Yahei Mono", "Microsoft Yahei", sans-serif !important;
   display: table-cell;
   margin: 0 auto;
   text-align: center;

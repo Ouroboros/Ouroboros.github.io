@@ -43,5 +43,5 @@ static void init_keys(const char* passwd,unsigned long* pkeys,const unsigned lon
 * 收工
 
 <figure>
-    <img src="/images/posts/find-zip-password-example-rar-zip-sfx-32.jpg" alt="">
+    <img src="/images/posts/find-zip-password/example-rar-zip-sfx-32.jpg" alt="">
 </figure>

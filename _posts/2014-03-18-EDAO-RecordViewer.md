@@ -15,6 +15,6 @@ date: 2014-03-18 01:40
 
 
 <figure>
-    <a href="/images/posts/EDAO-RecordViewer-Save-List.jpg" target="_blank"><img src="/images/posts/EDAO-RecordViewer-Save-List.jpg" alt=""></a>
-    <a href="/images/posts/EDAO-RecordViewer-Box-List.jpg" target="_blank"><img src="/images/posts/EDAO-RecordViewer-Box-List.jpg" alt=""></a>
+    <a href="/images/posts/EDAO-RecordViewer/Save-List.jpg" target="_blank"><img src="/images/posts/EDAO-RecordViewer/Save-List.jpg" alt=""></a>
+    <a href="/images/posts/EDAO-RecordViewer/Box-List.jpg" target="_blank"><img src="/images/posts/EDAO-RecordViewer/Box-List.jpg" alt=""></a>
 </figure>
