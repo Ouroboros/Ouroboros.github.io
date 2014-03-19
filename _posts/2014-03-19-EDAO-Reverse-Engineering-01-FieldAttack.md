@@ -241,7 +241,7 @@ TryInvoke(main)
 {% endhighlight %}
 
 
-图中七柱的 FA 脚本：
+图中[七柱的 FA 脚本](https://github.com/Arianrhod/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/p/fachr176._bn.py){:target="_blank"}：
 
 {% highlight python %}
 from FieldAttackChr import *
