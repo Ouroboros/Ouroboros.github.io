@@ -3,12 +3,13 @@ layout: post
 title: clean up qq
 description: ""
 tags:
-comments: true
-share: true
-date: 2014-03-19 12:10
+date: 2014-04-10 02:31
 ---
 
+fuck qq
+
 {% highlight bat %}
+
 @echo off
 
 if not exist "Files\" goto:eof
@@ -89,4 +90,5 @@ echo on
 cd/d "%~dp0"
 ren QQ QQ2
 ren Files QQ
+
 {% endhighlight %}
