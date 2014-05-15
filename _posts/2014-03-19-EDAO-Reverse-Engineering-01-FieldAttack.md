@@ -106,7 +106,9 @@ date: 2014-03-19 12:10
 下图是罗伊德的 FA 脚本`\ED_AO\data\system\fachr000._bn`
 
 <figure>
-    <a href="/images/posts/EDAO-Reverse-Engineering-01-FieldAttack/Field-Attack-File.jpg" target="_blank"><img src="/images/posts/EDAO-Reverse-Engineering-01-FieldAttack/Field-Attack-File.jpg" alt=""></a>
+    <a href="/images/posts/EDAO-Reverse-Engineering-01-FieldAttack/Field-Attack-File.jpg" target="_blank">
+        <img src="/images/posts/EDAO-Reverse-Engineering-01-FieldAttack/Field-Attack-File.jpg" alt="">
+    </a>
 </figure>
 
 <span style="background-color: rgb(175,195,241)">
