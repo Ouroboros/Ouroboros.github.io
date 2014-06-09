@@ -18,12 +18,13 @@ class EventDispatcher(QObject):
     def eventFilter(self, Receiver, Event):
         type = Event.type()
         if type == QEvent.MouseMove and isinstance(Receiver, QWidget):
+            f = None
             try:
                 f = Receiver.mouseMoveEvent
             except AttributeError:
-                f = None
+                pass
 
-            if f:
+            if callable(f):
                 f(Event)
                 return False
 
