@@ -116,7 +116,7 @@ date: 2014-03-19 12:10
 </span>
 
 <span style="background-color: rgb(191,175,241)">四字节，itc 索引，也就是人物的贴图，索引格式看</span>
-[这里](https://github.com/Arianrhod/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/Base/EDAOBase.py#L177){:target="_blank"}
+[这里](https://github.com/Ouroboros/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/Base/EDAOBase.py#L177){:target="_blank"}
 
 <span style="background-color: rgb(237,160,191)">
 以单字节 0 结尾的字符串，不包含后缀的 eff 文件名。\\
@@ -132,7 +132,7 @@ eff 文件决定了攻击范围，击中效果，击中音效。\\
 # FA Byte Code
 
 FA 脚本一共 14 条 Byte Code，相比其它两个脚本，数量是相当少，当初只花了不到半小时就搞定了，
-代码[在这](https://github.com/Arianrhod/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/FieldAttackChr.py#L14){:target="_blank"}。
+代码[在这](https://github.com/Ouroboros/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/FieldAttackChr.py#L14){:target="_blank"}。
 
 |----------|----------------|---------------|
 | ByteCode | 助记符         |     参数      |
@@ -168,7 +168,7 @@ FA 脚本一共 14 条 Byte Code，相比其它两个脚本，数量是相当少
 {: rules="groups"}
 
 
-表中的参数定义[在这](https://github.com/Arianrhod/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/Assembler/InstructionTable.py#L263){:target="_blank"}。
+表中的参数定义[在这](https://github.com/Ouroboros/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/Assembler/InstructionTable.py#L263){:target="_blank"}。
 基本原则是小写有符号，大写无符号
 
 |--------|---------------|-----------------|
@@ -243,7 +243,7 @@ TryInvoke(main)
 {% endhighlight %}
 
 
-图中[七柱的 FA 脚本](https://github.com/Arianrhod/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/p/fachr176._bn.py){:target="_blank"}：
+图中[七柱的 FA 脚本](https://github.com/Ouroboros/Arianrhod/blob/master/Source/Hooks/EDAO/Decompiler/p/fachr176._bn.py){:target="_blank"}：
 
 {% highlight python %}
 from FieldAttackChr import *

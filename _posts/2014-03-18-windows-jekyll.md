@@ -99,5 +99,5 @@ end
 
 * jekyll 不支持中文，只需要在`_config.yml`里加上一行`encoding: "utf-8"`
 
-最后可以写个[批处理](https://github.com/Arianrhod/Arianrhod.github.io/blob/master/start.bat){:target="_blank"}启动 jekyll
+最后可以写个[批处理](https://github.com/Ouroboros/Arianrhod.github.io/blob/master/start.bat){:target="_blank"}启动 jekyll
 
