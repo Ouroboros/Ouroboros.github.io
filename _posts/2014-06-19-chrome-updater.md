@@ -1,6 +1,6 @@
 ---
 layout: post
-title: pyqt5 mouseMoveEvent bug
+title: chrome updater
 description: ""
 tags:
 date: 2014-06-19 12:45
