@@ -16,14 +16,14 @@ stable = r'''<?xml version='1.0' encoding='UTF-8'?><request protocol='3.0' ismac
 beta = r'''<?xml version='1.0' encoding='UTF-8'?><request protocol='3.0' ismachine='0'><app appid='{4DC8B4CA-1BDA-483E-B5FA-D3C12E15B62D}' ap='1.1-beta'><updatecheck/></app></request>'''
 dev = r'''<?xml version='1.0' encoding='UTF-8'?><request protocol='3.0' ismachine='0'><app appid='{4DC8B4CA-1BDA-483E-B5FA-D3C12E15B62D}' ap='2.0-dev'><updatecheck/></app></request>'''
 
-def main():
+def query_chrome(ver):
     Proxies = \
     {
         'http' : 'http://127.0.0.1:8087',
         'https' : 'https://127.0.0.1:8087',
     }
 
-    ret = requests.request('post', 'http://tools.google.com/service/update2', data = beta, proxies = Proxies)
+    ret = requests.request('post', 'http://tools.google.com/service/update2', data = ver, proxies = Proxies)
 
     info = ET.fromstring(ret.content)
     app = info.find('app')
@@ -35,8 +35,13 @@ def main():
     dllist = [(x.attrib['codebase'] + name) for x in urls]
 
     for url in dllist:
-        print(url)
+        print(url.split('://', maxsplit = 1)[1])
+    print()
 
+def main():
+    query_chrome(stable)
+    query_chrome(beta)
+    query_chrome(dev)
     PauseConsole()
 
 if __name__ == '__main__':
