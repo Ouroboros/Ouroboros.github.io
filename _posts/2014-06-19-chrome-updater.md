@@ -23,9 +23,11 @@ def query_chrome(ver):
         'https' : 'https://127.0.0.1:8087',
     }
 
-    ret = requests.request('post', 'http://tools.google.com/service/update2', data = ver, proxies = Proxies)
+    req = AsyncHttpRequest()
+    req.SetProxy(Proxies)
+    ret = req.Request('post', 'https://tools.google.com/service/update2', SendData = ver)
 
-    info = ET.fromstring(ret.content)
+    info = ET.fromstring(ret.response.content)
     app = info.find('app')
     updatecheck = app.find('updatecheck')
     urls = updatecheck.find('urls')
@@ -45,6 +47,6 @@ def main():
     PauseConsole()
 
 if __name__ == '__main__':
-  TryInvoke(main)
+    TryInvoke(main)
 
 {% endhighlight %}
