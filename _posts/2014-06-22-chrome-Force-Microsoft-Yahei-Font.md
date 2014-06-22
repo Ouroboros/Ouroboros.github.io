@@ -19,4 +19,8 @@ span .octicon, .octicon-home, .octicon-gist-fork, .octicon-file-media, .octicon-
 }
 
 
+[class*="octicon"] {
+  font-family: octicons !important;
+}
+
 {% endhighlight %}
