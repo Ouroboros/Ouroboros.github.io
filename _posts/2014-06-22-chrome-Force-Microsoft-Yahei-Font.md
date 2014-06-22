@@ -1,0 +1,22 @@
+---
+layout: post
+title: Force Microsoft Yahei Font
+description: ""
+tags:
+date: 2014-06-22 09:06
+---
+
+令[这个](https://chrome.google.com/webstore/detail/ojlocjfaheiilmgjdgnoehhdigfedhjl){:target="_blank"}扩展正确显示 github 的 icon font
+
+不懂 css，不知道有没有简单的写法
+
+{% highlight css %}
+
+
+/* for github.com */
+span .octicon, .octicon-home, .octicon-gist-fork, .octicon-file-media, .octicon-history, .octicon-chevron-down, .octicon-lock, .octicon-log-in, .octicon-gist, .octicon-gist-secret, .octicon-radio-tower, .octicon-repo-clone, .octicon-ruby, .octicon-repo, .octicon-playback-pause, .octicon-arrow-down, .octicon-chevron-right, .octicon-hourglass, .octicon-device-camera-video, .octicon-file-zip, .octicon-mirror, .octicon-heart, .octicon-code, .octicon-repo-force-push, .octicon-alert, .octicon-triangle-right, .octicon-podium, .octicon-git-compare, .octicon-location, .octicon-mirror-public, .octicon-stop, .octicon-calendar, .octicon-terminal, .octicon-plus, .octicon-paintcan, .octicon-book, .octicon-remove-close, .octicon-screen-normal, .octicon-issue-opened, .octicon-playback-fast-forward, .octicon-rocket, .octicon-mortar-board, .octicon-repo-pull, .octicon-list-unordered, .octicon-search, .octicon-tag-add, .octicon-eye, .octicon-link-external, .octicon-ellipsis, .octicon-gift, .octicon-person-add, .octicon-mirror-private, .octicon-repo-push, .octicon-device-camera, .octicon-mark-github, .octicon-repo-delete, .octicon-trashcan, .octicon-check, .octicon-logo-github, .octicon-squirrel, .octicon-steps, .octicon-bug, .octicon-mail-reply, .octicon-move-down, .octicon-git-fork-private, .octicon-file-binary, .octicon-comment, .octicon-jersey, .octicon-plug, .octicon-color-mode, .octicon-arrow-right, .octicon-move-left, .octicon-playback-play, .octicon-split, .octicon-chevron-up, .octicon-file-code, .octicon-key, .octicon-sign-out, .octicon-gist-private, .octicon-mention, .octicon-issue-closed, .octicon-arrow-small-right, .octicon-credit-card, .octicon-circuit-board, .octicon-browser, .octicon-move-up, .octicon-quote, .octicon-star, .octicon-list-ordered, .octicon-horizontal-rule, .octicon-arrow-small-left, .octicon-eye-watch, .octicon-light-bulb, .octicon-telescope, .octicon-alignment-aligned-to, .octicon-device-mobile, .octicon-cloud-download, .octicon-checklist, .octicon-globe, .octicon-star-add, .octicon-file-add, .octicon-triangle-left, .octicon-triangle-up, .octicon-unmute, .octicon-comment-discussion, .octicon-jump-right, .octicon-zap, .octicon-puzzle, .octicon-sign-in, .octicon-log-out, .octicon-rss, .octicon-octoface, .octicon-tag, .octicon-file-directory-create, .octicon-organization, .octicon-git-branch, .octicon-tag-remove, .octicon-file-submodule, .octicon-briefcase, .octicon-device-desktop, .octicon-diff-modified, .octicon-star-delete, .octicon-file-pdf, .octicon-search-save, .octicon-arrow-up, .octicon-primitive-dot, .octicon-mute, .octicon-triangle-down, .octicon-microscope, .octicon-diff-ignored, .octicon-alignment-unalign, .octicon-clippy, .octicon-server, .octicon-markdown, .octicon-hubot, .octicon-dashboard, .octicon-inbox, .octicon-gear, .octicon-mail-read, .octicon-package, .octicon-clock, .octicon-screen-full, .octicon-question, .octicon-unfold, .octicon-beer, .octicon-diff-added, .octicon-git-pull-request-abandoned, .octicon-three-bars, .octicon-graph, .octicon-x, .octicon-pencil, .octicon-playback-rewind, .octicon-gist-new, .octicon-dash, .octicon-issue-reopened, .octicon-cloud-upload, .octicon-diff-removed, .octicon-fold, .octicon-pulse, .octicon-file-directory, .octicon-git-merge, .octicon-versions, .octicon-git-pull-request, .octicon-git-branch-delete, .octicon-file-symlink-file, .octicon-sync, .octicon-move-right, .octicon-repo-forked, .octicon-repo-sync, .octicon-file-symlink-directory, .octicon-primitive-square, .octicon-eye-unwatch, .octicon-settings, .octicon-person-follow, .octicon-git-branch-create, .octicon-alignment-align, .octicon-diff-renamed, .octicon-database, .octicon-mail, .octicon-git-commit, .octicon-pin, .octicon-diff, .octicon-milestone, .octicon-jump-left, .octicon-megaphone, .octicon-circle-slash, .octicon-no-newline, .octicon-repo-create, .octicon-link, .octicon-arrow-small-up, .octicon-file-text, .octicon-comment-add, .octicon-person, .octicon-tools, .octicon-keyboard, .octicon-jump-up, .octicon-jump-down, .octicon-bookmark, .octicon-flame, .octicon-arrow-small-down, .octicon-broadcast, .octicon-chevron-left, .octicon-arrow-left, .octicon-info {
+  font-family: octicons !important;
+}
+
+
+{% endhighlight %}
