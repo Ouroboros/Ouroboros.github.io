@@ -22,20 +22,21 @@
                     })
                 });
 
-                // 分享到朋友圈
-                WeixinJSBridge.on('menu:share:timeline', function (argv) {
+                WeixinJSBridge.on('menu:share:timeline', function(argv) {
                     WeixinJSBridge.invoke('shareTimeline', {
-                        "img_url": "http://bcs.duapp.com/api100/image/logo/newyear.jpg",
-                        "img_width": "160",
-                        "img_height": "160",
-                        "link": "http://api100.duapp.com/card/",
-                        "desc":  "Best wishes for a wonderful new year.",
-                        "title": "新年贺卡"
-                    }, function (res) {
-                        _report('timeline', res.err_msg);
+                        "img_url": "http://1251001823.cdn.myqcloud.com/1251001823/wechat/mao80.jpg",
+                        "img_width": "640",
+                        "img_height": "640",
+                        "link": "http://1251001823.cdn.myqcloud.com/1251001823/wechat/sjm/launcher",
+                        "desc": "在9×9范围内的格子中，使用色块围住白色神经猫。",
+                        "title": "我用了5步围住神经猫，击败100%的人，你能超过我吗？"
+                    }, function(res) {
+                        // document.location.href = mebtnopenurl;
                     });
                 });
+
             }, false)
         </script>
     </body>
 </html>
+
