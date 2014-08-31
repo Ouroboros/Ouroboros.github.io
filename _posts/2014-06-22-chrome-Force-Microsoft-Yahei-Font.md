@@ -42,6 +42,7 @@ hosts =
     "github.com",
     "github.io",
     "taobao.com",
+    "100offer.com",
 ]
 
 exts =
@@ -71,7 +72,7 @@ function check()
     link.href = chrome.extension.getURL("font.css");
     link.type = "text/css";
     link.rel = "stylesheet";
-    document.documentElement.insertBefore(link);
+    document.documentElement.insertBefore(link, null);
 }
 
 check()
