@@ -42,7 +42,9 @@ hosts =
     "github.com",
     "github.io",
     "taobao.com",
+    "tmall.com",
     "100offer.com",
+    "qingcloud.com",
 ]
 
 exts =
