@@ -27,8 +27,6 @@ for %%f in (^
     QQSafeUD.exe ^
     StorageTool.exe ^
     Tencentdl.exe ^
-    Timwp.exe ^
-    TXPlatform.exe ^
     maLauncher.exe ^
     maUpdat.exe ^
     QPerfHelper.exe ^
@@ -43,6 +41,7 @@ cd..
 rd/s/q QQProtect
 
 echo D|xcopy /y /e ..\QQ\Misc\Sound .\Misc\Sound
+echo D|xcopy /y /e ..\QQ\QQProtect .\QQProtect
 
 del QQUninst.exe txupd.exe
 
@@ -52,7 +51,6 @@ md Disabled
 
 for %%p in (^
     Com.Tencent.Advertisement ^
-    Com.Tencent.CRM ^
     Com.Tencent.GameLife ^
     Com.Tencent.Graffito ^
     Com.Tencent.HRTX ^
@@ -80,7 +78,8 @@ for %%p in (^
 ) do (
 
     rem %DEBUG% rd/s/q %%p
-    %DEBUG% move %%p Disabled
+    rem %DEBUG% move %%p Disabled
+    echo. > %%p\Disabled
 )
 
 echo on
@@ -90,5 +89,6 @@ echo on
 cd/d "%~dp0"
 ren QQ QQ2
 ren Files QQ
+
 
 {% endhighlight %}
