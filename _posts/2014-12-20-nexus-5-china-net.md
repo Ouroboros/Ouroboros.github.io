@@ -51,6 +51,7 @@ date: 2014-12-20 01:43
     然后点返回，会自动重启手机，此时紧按音量下键，直接进入 bootloader，把上面的 boot_with_diag.img 刷进去
 
     ```fastboot flash boot boot_with_diag.img```
+
     ```fastboot reboot```
 
 6. 装好后，打开 USB 调试：
