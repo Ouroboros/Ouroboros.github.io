@@ -65,7 +65,7 @@ date: 2014-12-20 01:43
     [LG United Mobile Driver]({{site.url}}/bin/Tools/Android/LG United Mobile Driver/LGUnitedMobileDriver_S51MAN312AP22_ML_WHQL_Ver_3.12.3.exe)
     ，否则会变成无法识别的设备
 
-    装好后启动[DFS]({{site.url}}/bin/Tools/Android/ChinaNet/Setup DFS 14.11.16.0)，
+    装好后启动[DFS]({{site.url}}/bin/Tools/Android/ChinaNet/Setup DFS 14.11.16.0.exe)（[官网](http://cdmatool.com/download){:target="_blank"}），
     如下图，双击添加端口
 
     <figure><a href="/images/posts/nexus-5-china-net/DFS-add-port.png" target="_blank"><img src="/images/posts/nexus-5-china-net/DFS-add-port.png" alt=""></a></figure>
