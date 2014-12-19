@@ -98,7 +98,9 @@ date: 2014-12-20 01:43
     4. 这次会显示无信号了，关机插卡
     5. 开机，这时候已经能正确识别电信了
 
-    最后这步参考了[这个帖子](http://bbs.gfan.com/android-7137082-1-1.html){:target="_blank"}
+    最后这步参考了
+    [这个帖子](http://bbs.gfan.com/android-7137082-1-1.html){:target="_blank"}，
+    感谢 xiaovi123
 
 8. 最后，进 TWRP 备份你的 EFS
 
