@@ -11,7 +11,7 @@ date: 2014-12-20 01:43
 1. <a href="{{site.url}}/bin/Tools/Android/adb-fastboot-win.7z" class="btn btn-success">准备好 adb 和 fastboot</a>
     ，然后把手机卡拆下来
 
-2. 首先，要下载 <a href="https://developers.google.com/android/nexus/images" class="btn btn-success" target="_blank">4.4.2 的 Factory Image</a>
+2. 首先，要下载 <a href="https://developers.google.com/android/nexus/images#hammerhead" class="btn btn-success" target="_blank">4.4.2 的 Factory Image</a>
 
     因为大神做的
     <a href="{{site.url}}/bin/Tools/Android/ChinaNet/boot_with_diag.img" class="btn btn-success">boot_with_diag.img</a>
