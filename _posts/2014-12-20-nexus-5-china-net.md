@@ -63,7 +63,7 @@ date: 2014-12-20 01:43
     ```root@hammerhead:/ # setprop sys.usb.config diag,adb```
 
     这时候系统会提示找到新设备，这时候就要安装
-    <{{site.url}}/bin/Tools/Android/LG United Mobile Driver/LGUnitedMobileDriver_S51MAN312AP22_ML_WHQL_Ver_3.12.3.exe>(LG United Mobile Driver)
+    [LG United Mobile Driver]({{site.url}}/bin/Tools/Android/LG United Mobile Driver/LGUnitedMobileDriver_S51MAN312AP22_ML_WHQL_Ver_3.12.3.exe)
     ，否则会变成无法识别的设备
 
     装好后启动[DFS]({{site.url}}/bin/Tools/Android/ChinaNet/Setup DFS 14.11.16.0.exe)（[官网](http://cdmatool.com/download){:target="_blank"}），
