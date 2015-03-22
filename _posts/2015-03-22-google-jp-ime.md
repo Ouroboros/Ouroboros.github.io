@@ -1,6 +1,6 @@
 ---
 layout: post
-title: chrome updater
+title: google jp ime updater
 description: ""
 tags:
 date: 2015-03-22 21:59
