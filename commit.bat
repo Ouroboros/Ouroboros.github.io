@@ -6,7 +6,7 @@ set git=D:\Dev\PortableGit\bin\git.exe
 %git% pull origin master
 %git% status
 %git% add .
-%git% commit * -m "."
+%git% commit * --allow-empty-message -m ""
 %git% push origin master
 
 %git% gc
