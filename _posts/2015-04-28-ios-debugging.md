@@ -6,7 +6,7 @@ tags:
 date: 2015-04-28 18:08
 ---
 
-{% highlight bash %}
+{% highlight bat %}
 
 (gdb) set sharedlibrary load-rules ".*" ".*" none
 (gdb) set inferior-auto-start-dyld off
