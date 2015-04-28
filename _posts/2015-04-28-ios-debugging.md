@@ -6,6 +6,8 @@ tags:
 date: 2015-04-28 18:08
 ---
 
+test
+
 {% highlight bat %}
 
 (gdb) set sharedlibrary load-rules ".*" ".*" none
