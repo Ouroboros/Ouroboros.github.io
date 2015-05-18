@@ -8,7 +8,7 @@ date: 2015-05-16 03:43
 
 先 clone 源码
 
-```git clone http://llvm.org/git/lldb.git```
+```git clone http://llvm.org/git/llvm.git```
 
 ```git clone http://llvm.org/git/clang.git```
 
