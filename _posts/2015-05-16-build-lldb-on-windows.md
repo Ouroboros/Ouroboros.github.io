@@ -22,6 +22,7 @@ date: 2015-05-16 03:43
 
 <http://www.cmake.org/download/>
 
+把 [ninja.exe]({{site.url}}/bin/Tools/ninja.exe) 放到 ```cmake\bin``` 下
 
 目录结构如下
 
