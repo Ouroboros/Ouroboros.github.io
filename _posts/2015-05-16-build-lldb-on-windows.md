@@ -53,7 +53,7 @@ call "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" x86
 mkdir release
 cd release
 
-cmake -G Ninja "%~dp0llvm" -DCMAKE_BUILD_TYPE=Release
+cmake -G Ninja "%~dp0llvm" -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 cmd/k
 
