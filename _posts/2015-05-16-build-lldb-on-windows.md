@@ -28,9 +28,10 @@ date: 2015-05-16 03:43
 
 > build\llvm\tools\clang
 >
->     \llvm\tools\clang
->     \llvm\tools\lldb
->
+
+    \llvm\tools\clang
+    \llvm\tools\lldb
+
 >build\GetGnuWin32
 >
 >build\swigwin-3.0.5
