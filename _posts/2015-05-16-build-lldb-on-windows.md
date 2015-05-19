@@ -8,11 +8,9 @@ date: 2015-05-16 03:43
 
 先 clone 源码
 
-```git clone http://llvm.org/git/llvm.git```
-
-```git clone http://llvm.org/git/clang.git```
-
-```git clone http://llvm.org/git/lldb.git```
+>git clone http://llvm.org/git/llvm.git
+>git clone http://llvm.org/git/clang.git
+>git clone http://llvm.org/git/lldb.git
 
 再下载
 
@@ -47,6 +45,7 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /OPT:REF")
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /OPT:REF")
 
 {% endhighlight %}
+
 
 build.bat 如下
 
