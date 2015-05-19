@@ -26,13 +26,20 @@ date: 2015-05-16 03:43
 
 目录结构如下
 
-```build\llvm\tools\clang
+```
+build\llvm\tools\clang
 build\llvm\tools\clang
 build\llvm\tools\lldb
 build\GetGnuWin32
 build\swigwin-3.0.5
 build\cmake-3.2.2-win32-x86
 build\build.bat
+```
+
+```
+manifest.json
+common/
+chrome/
 ```
 
 {% highlight bash %}
