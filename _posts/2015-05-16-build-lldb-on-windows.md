@@ -70,12 +70,12 @@ cmake -G Ninja "%~dp0llvm" -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 cmd/k
 
-::ninja lldb
+echo ninja lldb
 
 pause
 
 {% endhighlight %}
 
-配置好后直接执行 ninja 就可以编译了
+配置好后直接执行 ninja lldb 就可以编译了
 
 就这么简单的几个步骤, 非要写个长篇大论, 让我折腾半天
