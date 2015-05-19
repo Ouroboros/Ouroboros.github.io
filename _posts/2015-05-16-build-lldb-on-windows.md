@@ -30,7 +30,7 @@ date: 2015-05-16 03:43
 >
 >      \llvm\tools\clang
 >
->build\llvm\tools\lldb
+>     \llvm\tools\lldb
 >
 >build\GetGnuWin32
 >
