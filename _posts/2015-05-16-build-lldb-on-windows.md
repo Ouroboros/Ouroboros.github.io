@@ -16,11 +16,11 @@ date: 2015-05-16 03:43
 
 再下载
 
-<http://gnuwin32.sourceforge.net/>
+    <http://gnuwin32.sourceforge.net/>
 
-<http://www.swig.org/download.html>
+    <http://www.swig.org/download.html>
 
-<http://www.cmake.org/download/>
+    <http://www.cmake.org/download/>
 
 把 [ninja.exe]({{site.url}}/bin/Tools/ninja.exe) 放到 ```cmake\bin``` 下
 
