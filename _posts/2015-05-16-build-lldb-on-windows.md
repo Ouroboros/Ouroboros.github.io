@@ -8,11 +8,11 @@ date: 2015-05-16 03:43
 
 先 clone 源码
 
->git clone http://llvm.org/git/llvm.git
+> git clone http://llvm.org/git/llvm.git
 >
->git clone http://llvm.org/git/clang.git
+> git clone http://llvm.org/git/clang.git
 >
->git clone http://llvm.org/git/lldb.git
+> git clone http://llvm.org/git/lldb.git
 
 再下载
 
@@ -26,9 +26,9 @@ date: 2015-05-16 03:43
 
 目录结构如下
 
->build\llvm\tools\clang
+> build\llvm\tools\clang
 >
->      \llvm\tools\clang
+> \llvm\tools\clang
 >
 >build\llvm\tools\lldb
 >
