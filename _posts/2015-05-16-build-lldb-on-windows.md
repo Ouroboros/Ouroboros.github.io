@@ -27,8 +27,10 @@ date: 2015-05-16 03:43
 目录结构如下
 
 >build
+
 >>llvm
->> >> tools
+
+>>tools
 
 build\llvm\tools\clang
 
