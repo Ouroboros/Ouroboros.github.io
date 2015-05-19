@@ -40,6 +40,14 @@ date: 2015-05-16 03:43
 
 ```build\build.bat```
 
+{% highlight bash %}
+
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /OPT:REF")
+
+set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /OPT:REF")
+
+{% endhighlight %}
+
 build.bat 如下
 
 {% highlight bat %}
