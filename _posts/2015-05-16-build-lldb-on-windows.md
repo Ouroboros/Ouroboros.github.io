@@ -42,6 +42,7 @@ date: 2015-05-16 03:43
         |
         `-- lldb
 
+CMakeLists.txt 加上下面两句
 
 {% highlight bash %}
 
