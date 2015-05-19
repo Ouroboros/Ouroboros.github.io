@@ -9,7 +9,6 @@ date: 2015-05-16 03:43
 先 clone 源码
 
 >git clone http://llvm.org/git/llvm.git
-
 >git clone http://llvm.org/git/clang.git
 
 >git clone http://llvm.org/git/lldb.git
@@ -28,7 +27,6 @@ date: 2015-05-16 03:43
 
 ```
 build\llvm\tools\clang
-
 build\llvm\tools\clang
 build\llvm\tools\lldb
 build\GetGnuWin32
