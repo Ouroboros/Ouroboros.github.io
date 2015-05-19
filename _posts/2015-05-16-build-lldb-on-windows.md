@@ -28,7 +28,7 @@ date: 2015-05-16 03:43
 
 > build\llvm\tools\clang
 >
-> \llvm\tools\clang
+>    \llvm\tools\clang
 >
 >build\llvm\tools\lldb
 >
