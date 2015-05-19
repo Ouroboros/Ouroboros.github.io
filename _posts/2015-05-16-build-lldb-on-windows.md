@@ -26,27 +26,21 @@ date: 2015-05-16 03:43
 
 目录结构如下
 
-    llvm
+    +-- build.bat
+    |
+    +-- GetGnuWin32
+    |
+    +-- swigwin-3.0.5
+    |
+    +-- cmake-3.2.2-win32-x86
+    |
+    +-- llvm
     |
     `-- tools
         |
         +-- clang
         |
         `-- lldb
-
-    build\llvm\tools\clang
-
-    \llvm\tools\clang
-
-        \tools\lldb
-
->build\GetGnuWin32
->
->build\swigwin-3.0.5
->
->build\cmake-3.2.2-win32-x86
->
->build\build.bat
 
 {% highlight bash %}
 
