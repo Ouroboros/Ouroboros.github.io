@@ -11,7 +11,7 @@ date: 2015-05-16 03:43
 >git clone http://llvm.org/git/llvm.git
 >
 >git clone http://llvm.org/git/clang.git
-
+>
 >git clone http://llvm.org/git/lldb.git
 
 再下载
@@ -26,21 +26,19 @@ date: 2015-05-16 03:43
 
 目录结构如下
 
-```
-build\llvm\tools\clang
-build\llvm\tools\clang
-build\llvm\tools\lldb
-build\GetGnuWin32
-build\swigwin-3.0.5
-build\cmake-3.2.2-win32-x86
-build\build.bat
-```
-
-```
-manifest.json
-common/
-chrome/
-```
+>build\llvm\tools\clang
+>
+>build\llvm\tools\clang
+>
+>build\llvm\tools\lldb
+>
+>build\GetGnuWin32
+>
+>build\swigwin-3.0.5
+>
+>build\cmake-3.2.2-win32-x86
+>
+>build\build.bat
 
 {% highlight bash %}
 
@@ -68,7 +66,7 @@ cmake -G Ninja "%~dp0llvm" -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 cmd/k
 
-::ninja
+::ninja lldb
 
 pause
 
