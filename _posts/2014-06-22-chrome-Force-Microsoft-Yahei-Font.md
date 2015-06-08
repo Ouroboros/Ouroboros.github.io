@@ -189,3 +189,55 @@ border-width: 0 9px 0 9px;
 }
 
 {% endhighlight %}
+
+
+
+{% highlight js %}
+
+// ==UserScript==
+// @name        aliway
+// @namespace   aliway
+// @version     1
+// @grant       none
+// @run-at document-end
+// ==/UserScript==
+
+function hereDoc(f) {
+  return f.toString().
+      replace(/^[^\/]+\/\*!?/, '').
+      replace(/\*\/[^\/]+$/, '');
+}
+
+var style = hereDoc(function() {/*!
+body {
+    -moz-user-select: text !important;
+    -webkit-user-select: text !important;
+    -ms-user-select: text !important;
+    -khtml-user-select: text !important;
+    user-select: text !important;
+}
+
+.tpc_content {
+    background: none !important;
+}
+*/});
+
+(function () {
+
+    if (location.hostname.indexOf('www.aliway.com') == -1)
+        return;
+
+    document.onselectstart = null;
+    document.oncontextmenu = null;
+    document.body.ondrag = null;
+
+    var link = document.createElement("link");
+    link.href = "data:text/css;base64," + window.btoa(style)
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    document.documentElement.insertBefore(link, null);
+
+})()
+
+
+{% endhighlight %}
