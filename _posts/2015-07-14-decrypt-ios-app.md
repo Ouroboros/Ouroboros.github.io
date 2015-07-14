@@ -56,4 +56,6 @@ date: 2015-07-14 15:47
 
     iPhone:/ root#
 
+{% endhighlight %}
+
 会在当前目录生成 IF.decrypted, 拷出来, 拖进 IDA
