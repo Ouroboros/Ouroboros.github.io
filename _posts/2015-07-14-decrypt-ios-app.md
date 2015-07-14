@@ -14,6 +14,8 @@ date: 2015-07-14 15:47
 
 连上 ssh
 
+{% highlight bash %}
+
     iPhone:/ root# cd /
 
     iPhone:/ root# DYLD_INSERT_LIBRARIES=/usr/lib/dumpdecrypted.dylib /var/mobile/Containers/Bundle/Application/7F3190A0-6BE1-4562-BA54-AE0069FA5B1D/IF.app/IF
