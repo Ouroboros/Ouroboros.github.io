@@ -8,7 +8,7 @@ date: 2015-07-14 15:47
 
 源码在这里
 
-    https://github.com/stefanesser/dumpdecrypted/
+<https://github.com/stefanesser/dumpdecrypted/>
 
 编译好后把 ```dumpdecrypted.dylib``` 放到 ```/usr/lib/dumpdecrypted.dylib```
 
