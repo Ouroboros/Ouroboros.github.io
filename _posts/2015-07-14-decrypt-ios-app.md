@@ -43,3 +43,15 @@ iPhone:/ root#
 {% endhighlight %}
 
 会在当前目录生成 IF.decrypted, 拷出来, 拖进 IDA
+
+## iOS 8.3/8.4 下修改 bin 后闪退的问题:
+
+1. 安装后先启动一次
+
+2. 再把原始 bin 复制到 / 下
+
+3. 修改完后用 ldid -s bin 签名
+
+4. 删除原始 bin, 再把签好名的 bin 复制过来
+
+5. 这时启动 app 就不会闪退了
