@@ -50,7 +50,7 @@ iPhone:/ root#
 
 2. 再把原始 bin 复制到 / 下
 
-3. 修改完后用 ldid -s bin 签名
+3. 修改完后用 ldid -s /bin 签名
 
 4. 删除原始 bin, 再把签好名的 bin 复制过来
 
