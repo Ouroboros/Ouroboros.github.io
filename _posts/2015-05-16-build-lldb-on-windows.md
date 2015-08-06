@@ -79,3 +79,5 @@ pause
 配置好后直接执行 ninja lldb 就可以编译了
 
 就这么简单的几个步骤, 非要写个长篇大论, 让我折腾半天
+
+<div markdown="0"><a href="{{ site.url }}/bin/Tools/iOS/debugserver" class="btn btn-success">debugserver-320.2.89</a></div>
