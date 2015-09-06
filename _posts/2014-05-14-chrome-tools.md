@@ -28,3 +28,16 @@ chrome 32 以上，Chrome Toolbox 失效后的版本
         <img src="/images/posts/chrome-tools/chrome_dir.jpg" alt="">
     </a>
 </figure>
+
+{% highlight bat %}
+
+@echo off
+cd/d "%~dp0"
+
+rd "%localappdata%\Google\Chrome\User Data"
+md "%localappdata%\Google\Chrome\"
+mklink /j "%localappdata%\Google\Chrome\User Data" "%~dp0UserData"
+pause
+
+{% endhighlight %}
+
