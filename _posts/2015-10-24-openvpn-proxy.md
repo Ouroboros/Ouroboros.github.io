@@ -6,8 +6,9 @@ tags:
 date: 2015-10-24 04:04
 ---
 
-首先下载最新的 [openvpn](https://openvpn.net/index.php/open-source/downloads.html){:target="_blank"}
+[参考链接](https://forums.openvpn.net/topic7806.html){:target="_blank"}
 
+首先下载最新的 [openvpn](https://openvpn.net/index.php/open-source/downloads.html){:target="_blank"}
 
 {% highlight bat %}
 
