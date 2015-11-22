@@ -26,3 +26,17 @@ date: 2014-05-22 13:23
 6. <figure> <a href="/images/posts/nexus-5-custom-recovery/fastboot-flash-cmd.png" target="_blank"><img src="/images/posts/nexus-5-custom-recovery/fastboot-flash-cmd.png" alt=""></a></figure>
 
 7. 用音量键切换到 Restart Bootloader，按电源键选择。重启后再切换到 Recovery Mode，按电源键
+
+
+```bat
+echo fuck
+fastboot flash bootloader bootloader-bullhead-bhz10i.img
+fastboot reboot-bootloader
+fastboot flash radio radio-bullhead-m8994f-2.6.28.0.65.img
+fastboot reboot-bootloader
+fastboot erase cache
+fastboot flash cache cache.img
+fastboot flash recovery recovery.img
+fastboot flash system system.img
+fastboot flash vendor vendor.img
+```
