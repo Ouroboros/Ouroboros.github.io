@@ -6,8 +6,7 @@ tags:
 date: 2015-12-03 12:30
 ---
 
-```bat
-
+{% highlight bat %}
 @echo off
 
 cd/d "%~dp0"
@@ -34,4 +33,4 @@ configure   -platform win32-msvc2015 ^
 
 cmd /k
 
-```
+{% endhighlight %}
