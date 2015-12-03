@@ -7,6 +7,7 @@ date: 2015-12-03 12:30
 ---
 
 ```bat
+
 @echo off
 
 cd/d "%~dp0"
