@@ -6,6 +6,8 @@ tags:
 date: 2015-12-03 12:30
 ---
 
+stupid
+
 {% highlight bat %}
 
 @echo off
