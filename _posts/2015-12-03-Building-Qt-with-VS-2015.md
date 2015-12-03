@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VS 2015 编译 Qt 5.5.1
+title: VS 2015 编译 PyQt
 description: ""
 tags:
 date: 2015-12-03 12:30
