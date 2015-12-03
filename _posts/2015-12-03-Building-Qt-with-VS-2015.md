@@ -6,8 +6,6 @@ tags:
 date: 2015-12-03 12:30
 ---
 
-what
-
 {% highlight bat %}
 
 @echo off
