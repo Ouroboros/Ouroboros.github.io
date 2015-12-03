@@ -37,5 +37,3 @@ configure   -platform win32-msvc2015 ^
 cmd /k
 
 {% endhighlight %}
-
-what
