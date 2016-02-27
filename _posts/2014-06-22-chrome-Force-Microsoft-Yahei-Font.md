@@ -176,3 +176,32 @@ function removeCopy() {
 })()
 
 {% endhighlight %}
+
+
+
+`login.taobao.com.js`
+
+{% highlight js %}
+
+// ==UserScript==
+// @name        taobao login
+// @namespace   taobao login
+// @version     1
+// @grant       none
+// @run-at document-idle
+// ==/UserScript==
+
+(function () {
+
+    if (location.hostname.indexOf('login.taobao.com') == -1)
+        return;
+
+    setTimeout(function() {
+            document.getElementById('J_Quick2Static').click();
+        },
+        500
+    )
+})()
+
+
+{% endhighlight %}
