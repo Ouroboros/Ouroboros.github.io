@@ -14,10 +14,10 @@ date: 2014-06-22 09:06
 // @name        font
 // @namespace   font
 // @version     1
+// @match       http*://*/*
 // @grant       none
 // @run-at document-start
 // ==/UserScript==
-
 
 hosts =[
     'tower.im',
@@ -35,7 +35,7 @@ hosts =[
     'github.com',
     'tmall.com',
     'atom.io',
-    'taobao.com',
+    //'taobao.com',
     'leetcode.com',
     'qt.io',
     'uber.com',
@@ -55,7 +55,12 @@ hosts =[
     'acfun.tv',
     'id.apple.com',
     'wholetomato.com',
-]
+    'bilibili.com',
+    "microsoft.com",
+    "vultr.com",
+    "aliyun.com",
+    "play.rust-lang.org",
+];
 
 exts = [
     ".pdf",
@@ -65,26 +70,80 @@ exts = [
     "arxiv.org/submit/",
 ];
 
-(function ()
-{
-    for (var h of hosts)
-    {
+function rstr(f) {
+  return f.toString().
+      replace(/^[^\/]+\/\*!?/, '').
+      replace(/\*\/[^\/]+$/, '');
+}
+
+var style = rstr(function() {/*!
+* {
+  font-family: "YaHei Consolas Hybrid", "WenQuanYi Micro Hei Mono", "WenQuanYi Micro Hei", "Microsoft Yahei Mono", "Microsoft Yahei", sans-serif, "Simsun" !important;
+}
+
+// for taobao.com, alipay.com, tmail.com
+.iconfont {
+  font-family: "iconfont", "shop-iconfont", "global-iconfont", "global", "uxiconfont", "rei" !important;
+}
+
+.mui-iconfont {
+  font-family: "mui-iconfont", "iconfont", "shop-iconfont", "global-iconfont", "uxiconfont", "rei" !important;
+}
+
+a .icon {
+  font-family: "vip-font", "iconfont", "shop-iconfont", "global-iconfont", "uxiconfont", "rei" !important;
+}
+
+// for github.com
+[class*="octicon"] {
+  font-family: octicons !important;
+}
+
+input:focus, input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+outline: 2px solid #6FA1D9 !important;
+-webkit-box-shadow:0px 0px 5px #6FA1D9 !important;
+}
+
+input[type="checkbox"]:focus,input[type="submit"]:focus,input[type="reset"]:focus, input[type="radio"]:focus {
+outline: 1px solid #6FA1D9 !important;
+}
+
+input[type="text"], input[type="password"], textarea {
+border:#ccc 1px solid;
+border-radius: 6px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+border: 2px solid #6FA1D9 !important;
+-webkit-box-shadow:0px 0px 5px #6FA1D9 !important;outline:none
+}
+
+input[type="checkbox"]:focus,input[type="submit"]:focus,input[type="reset"]:focus, input[type="radio"]:focus {
+border: 1px solid #6FA1D9 !important; outline:none
+}
+
+
+*/});
+
+(function () {
+    for (var h of hosts) {
         if (location.hostname.indexOf(h) != -1)
-            return
+            return;
     }
 
-    for (var e of exts)
-    {
+    for (var e of exts) {
         if (location.href.indexOf(e) != -1)
-            return
+            return;
     }
 
     var link = document.createElement("link");
-    link.href = "data:text/css;base64,KiB7CiAgZm9udC1mYW1pbHk6ICJXZW5RdWFuWWkgTWljcm8gSGVpIE1vbm8iLCAiV2VuUXVhbllpIE1pY3JvIEhlaSIsICJNaWNyb3NvZnQgWWFoZWkgTW9ubyIsICJNaWNyb3NvZnQgWWFoZWkiLCBzYW5zLXNlcmlmLCAiU2ltc3VuIiAhaW1wb3J0YW50Owp9CgovKiBmb3IgdGFvYmFvLmNvbSwgYWxpcGF5LmNvbSwgdG1haWwuY29tICovCi5pY29uZm9udCB7CiAgZm9udC1mYW1pbHk6ICJpY29uZm9udCIsICJzaG9wLWljb25mb250IiwgImdsb2JhbC1pY29uZm9udCIsICJnbG9iYWwiLCAidXhpY29uZm9udCIsICJyZWkiICFpbXBvcnRhbnQ7Cn0KCi5tdWktaWNvbmZvbnQgewogIGZvbnQtZmFtaWx5OiAibXVpLWljb25mb250IiwgImljb25mb250IiwgInNob3AtaWNvbmZvbnQiLCAiZ2xvYmFsLWljb25mb250IiwgInV4aWNvbmZvbnQiLCAicmVpIiAhaW1wb3J0YW50Owp9CgphIC5pY29uIHsKICBmb250LWZhbWlseTogInZpcC1mb250IiwgImljb25mb250IiwgInNob3AtaWNvbmZvbnQiLCAiZ2xvYmFsLWljb25mb250IiwgInV4aWNvbmZvbnQiLCAicmVpIiAhaW1wb3J0YW50Owp9CgovKiBmb3IgZ2l0aHViLmNvbSAqLwpbY2xhc3MqPSJvY3RpY29uIl0gewogIGZvbnQtZmFtaWx5OiBvY3RpY29ucyAhaW1wb3J0YW50Owp9CgppbnB1dDpmb2N1cywgaW5wdXRbdHlwZT0idGV4dCJdOmZvY3VzLCBpbnB1dFt0eXBlPSJwYXNzd29yZCJdOmZvY3VzLCB0ZXh0YXJlYTpmb2N1cyB7Cm91dGxpbmU6IDJweCBzb2xpZCAjNkZBMUQ5ICFpbXBvcnRhbnQ7Ci13ZWJraXQtYm94LXNoYWRvdzowcHggMHB4IDVweCAjNkZBMUQ5ICFpbXBvcnRhbnQ7Cn0KCmlucHV0W3R5cGU9ImNoZWNrYm94Il06Zm9jdXMsaW5wdXRbdHlwZT0ic3VibWl0Il06Zm9jdXMsaW5wdXRbdHlwZT0icmVzZXQiXTpmb2N1cywgaW5wdXRbdHlwZT0icmFkaW8iXTpmb2N1cyB7Cm91dGxpbmU6IDFweCBzb2xpZCAjNkZBMUQ5ICFpbXBvcnRhbnQ7Cn0KCmlucHV0W3R5cGU9InRleHQiXSwgaW5wdXRbdHlwZT0icGFzc3dvcmQiXSwgdGV4dGFyZWEgewpib3JkZXI6I2NjYyAxcHggc29saWQ7CmJvcmRlci1yYWRpdXM6IDZweDsKLW1vei1ib3JkZXItcmFkaXVzOiA2cHg7Ci13ZWJraXQtYm9yZGVyLXJhZGl1czogNnB4Owp9CgppbnB1dFt0eXBlPSJ0ZXh0Il06Zm9jdXMsIGlucHV0W3R5cGU9InBhc3N3b3JkIl06Zm9jdXMsIHRleHRhcmVhOmZvY3VzIHsKYm9yZGVyOiAycHggc29saWQgIzZGQTFEOSAhaW1wb3J0YW50Owotd2Via2l0LWJveC1zaGFkb3c6MHB4IDBweCA1cHggIzZGQTFEOSAhaW1wb3J0YW50O291dGxpbmU6bm9uZQp9CgppbnB1dFt0eXBlPSJjaGVja2JveCJdOmZvY3VzLGlucHV0W3R5cGU9InN1Ym1pdCJdOmZvY3VzLGlucHV0W3R5cGU9InJlc2V0Il06Zm9jdXMsIGlucHV0W3R5cGU9InJhZGlvIl06Zm9jdXMgewpib3JkZXI6IDFweCBzb2xpZCAjNkZBMUQ5ICFpbXBvcnRhbnQ7IG91dGxpbmU6bm9uZQp9Cg=="
+    link.href = 'data:text/css;base64,' + btoa(style);
     link.type = "text/css";
     link.rel = "stylesheet";
     document.documentElement.insertBefore(link, null);
-})()
+})();
 
 {% endhighlight %}
 
