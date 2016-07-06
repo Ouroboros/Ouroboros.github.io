@@ -246,21 +246,35 @@ function removeCopy() {
 // @name        taobao login
 // @namespace   taobao login
 // @version     1
+// @match       http*://*/*
 // @grant       none
 // @run-at document-idle
 // ==/UserScript==
 
 (function () {
-
     if (location.hostname.indexOf('login.taobao.com') == -1)
         return;
 
-    setTimeout(function() {
-            document.getElementById('J_Quick2Static').click();
-        },
-        500
-    )
-})()
+    var switched = false;
 
+    var id = setInterval(function() {
+            var loginBox = document.getElementById('J_LoginBox');
+            if (loginBox === null) {
+                //console.log('not found');
+                return;
+            }
+
+            if (loginBox.attributes.class.value.indexOf('module-quick') == -1) {
+                //console.log('not found 2');
+                return;
+            }
+
+            //console.log('clicked');
+            document.getElementById('J_Quick2Static').click();
+            clearInterval(id);
+
+        }, 100
+    );
+})();
 
 {% endhighlight %}
