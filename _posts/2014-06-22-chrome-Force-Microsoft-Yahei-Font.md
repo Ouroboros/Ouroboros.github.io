@@ -273,6 +273,8 @@ function removeCopy() {
             document.getElementById('J_Quick2Static').click();
             clearInterval(id);
 
+            document.getElementById('TPL_password_1').focus();
+
         }, 100
     );
 })();
