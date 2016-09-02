@@ -211,6 +211,7 @@ body {
 // ==UserScript==
 // @name        zhihu
 // @namespace   zhihu
+// @match       http*://*/*
 // @version     1
 // @grant       none
 // @run-at document-idle
@@ -218,20 +219,20 @@ body {
 
 function removeCopy() {
     var answers = $('div[class*=zm-item-rich-text][class*=js-collapse-body]');
+    answers = $('div[class*=entry-content][class*=js-collapse-body]');
 
     for (var i = 0; i != answers.length; ++i) {
-        var e = answers[i]
-        var events = $._data(e, 'events');
-        events && delete(events.copy)
+        var e = answers[i];
+        var events = $._data(e, 'events');;
+        events && delete(events.copy);
     }
 }
 
 (function () {
-
     if (location.hostname.indexOf('www.zhihu.com') == -1)
         return;
 
-    setTimeout(removeCopy, 1)
+    setTimeout(removeCopy, 1);
 })()
 
 {% endhighlight %}
