@@ -218,8 +218,10 @@ body {
 // ==/UserScript==
 
 function removeCopy() {
-    var answers = $('div[class*=zm-item-rich-text][class*=js-collapse-body]');
-    answers = $('div[class*=entry-content][class*=js-collapse-body]');
+    var answers = $.merge(
+        $('div[class*=zm-item-rich-text][class*=js-collapse-body]'),
+        $('div[class*=entry-content][class*=js-collapse-body]')
+    );
 
     for (var i = 0; i != answers.length; ++i) {
         var e = answers[i];
