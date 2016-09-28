@@ -155,6 +155,7 @@ border: 1px solid #6FA1D9 !important; outline:none
 // @name        aliway
 // @namespace   aliway
 // @version     1
+// @match       http*://*/*
 // @grant       none
 // @run-at document-end
 // ==/UserScript==
@@ -185,6 +186,17 @@ body {
 */});
 
 (function () {
+    if (location.hostname.indexOf('www.atatech.org') != -1) {
+        var x = $('div[class*=content][class*=unsafe]');
+
+        for (var i = 0; i != x.length; i++) {
+            if (x[i].style.background.indexOf('watermark.png') != -1) {
+                x[i].style.background = 'rgba(0, 0, 0, 0)';
+            }
+        }
+
+        return;
+    }
 
     if (location.hostname.indexOf('www.aliway.com') == -1)
         return;
@@ -194,7 +206,7 @@ body {
     document.body.ondrag = null;
 
     var link = document.createElement("link");
-    link.href = "data:text/css;base64," + window.btoa(style)
+    link.href = "data:text/css;base64," + window.btoa(style);
     link.type = "text/css";
     link.rel = "stylesheet";
     document.documentElement.insertBefore(link, null);
