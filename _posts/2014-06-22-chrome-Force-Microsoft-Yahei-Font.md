@@ -60,6 +60,13 @@ hosts =[
     "vultr.com",
     "aliyun.com",
     "play.rust-lang.org",
+    "secteam.ucweb.local",
+    "pixelfiredev.com",
+    "gitbooks.com",
+    "gitbooks.io",
+    "appbk.com",
+    "ads2.norn7.com",
+    "apple.com",
 ];
 
 exts = [
