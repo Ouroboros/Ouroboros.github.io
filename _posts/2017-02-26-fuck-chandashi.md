@@ -17,6 +17,13 @@ date: 2017-02-26 20:51
 // @run-at       document-start
 // ==/UserScript==
 
+function untopAllKeywords() {
+    var untops = $('.span-img-untop');
+    for (var i = 0; i != untops.length; i++) {
+        untops[i].click();
+    }
+}
+
 function waitForKeyElements (
     selectorTxt,    /* Required: The jQuery selector string that
                         specifies the desired element(s).
