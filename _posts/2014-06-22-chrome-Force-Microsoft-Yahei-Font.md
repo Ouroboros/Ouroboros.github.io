@@ -231,7 +231,7 @@ function removeCopy() {
     if (location.hostname.indexOf('www.zhihu.com') == -1)
         return;
 
-    setTimeout(removeCopy, 1)
+    document.addEventListener("copy", function(e){e.stopPropagation();}, true);
 })()
 
 {% endhighlight %}
